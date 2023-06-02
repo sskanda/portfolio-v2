@@ -71,7 +71,7 @@ function applyCursorRippleEffect(e) {
 
 }
 
-//test//
+///background-effect//////
 const onHome = document.getElementsByClassName("fp-viewing-page-home");
 const onAbout = document.getElementsByClassName("fp-viewing-page-about");
 const onWork = document.getElementsByClassName("fp-viewing-page-work");
@@ -81,6 +81,10 @@ const leftcircle = document.getElementsByClassName("left-end-circle")[0].style;
 const options = { attributes: true };
 const body = document.querySelector("body");
 const observer = new MutationObserver(scrollAnimations);
+const homelink = document.querySelector("#homelink");
+const aboutlink = document.querySelector("#aboutlink");
+const worklink = document.querySelector("#worklink");
+const contactlink = document.querySelector("#contactlink");
 observer.observe(body, options);
 
 document.addEventListener('click', function (e) {
@@ -110,12 +114,12 @@ function scrollAnimations(mutationList) {
                 rightcircle.top = '-100vmax';
                 rightcircle.left = '50%';
                 rightcircle.transform = 'translateX(-50%)';
-                rightcircle.background = 'green';
+                // rightcircle.background = 'green';
 
                 leftcircle.transform = 'translateX(-50%)';
                 leftcircle.backgroundColor = 'black';
                 leftcircle.left = '50%';
-                body.style.background = 'red';
+                // body.style.background = 'red';
             }
             if (onWork.length) {
                 rightcircle.top = '-300%';
@@ -124,7 +128,10 @@ function scrollAnimations(mutationList) {
                 leftcircle.left = '50%';
                 leftcircle.top = '-70%'
                 leftcircle.transform = 'translateX(-50%)';
-                leftcircle.backgroundColor = 'grey';
+                leftcircle.backgroundColor = 'var(--valotopcircle)';
+                body.style.backgroundColor = 'var(--valobg)';
+                body.style.color = 'white';
+                headercolor("white");
             }
             if (onContact.length) {
                 leftcircle.transform = 'translateX(-50%)';
@@ -134,4 +141,11 @@ function scrollAnimations(mutationList) {
             }
         }
     })
+}
+
+function headercolor(color) {
+    homelink.style.color = color;
+    aboutlink.style.color = color;
+    worklink.style.color = color;
+    contactlink.style.color = color;
 }
