@@ -283,7 +283,139 @@ section {
     margin-left: 5rem;
     font-weight: 500;
     margin-bottom: 5rem;
+    text-align: center;
 }
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25rem;
+}
+
+.outer-image-box {
+    position: relative;
+    width: 80rem;
+    height: 60rem;
+    padding-top: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 20rem;
+    background-color: aqua;
+    transition: 0.5s;
+}
+
+.inner-image-box {
+    width: 70rem;
+    height: 50rem;
+    position: absolute;
+    /* bottom: 0%; */
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #ff923e;
+}
+
+.inner-image-box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover
+}
+
+.outer-image-box:hover {
+    transform: scale(1.05)
+}
+
+.outer-2-image-box:hover {
+    transform: scale(1.05)
+}
+
+
+.work-desc {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 55%;
+    z-index: 2;
+    margin-right: 100px;
+}
+
+.work-desc-header {
+    margin-top: 100px;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.work-desc-content {
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+
+
+.work-desc-redirect a {
+    display: inline-block;
+    margin-top: 40px;
+    position: relative;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #091434;
+    transition: 0.5s;
+    transform-origin: bottom
+}
+
+.work-desc-redirect a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff923e;
+}
+
+.work-desc-redirect a:hover {
+    font-size: 3.5rem;
+
+}
+
+.work-2-desc {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20%;
+}
+
+.outer-2-image-box {
+    position: relative;
+    left: 70%;
+    width: 80rem;
+    height: 60rem;
+    padding-top: 20rem;
+    padding-right: 20rem;
+    padding-bottom: 20rem;
+    background-color: aqua;
+    transition: 0.5s;
+
+}
+
+.inner-2-image-box {
+    width: 70rem;
+    height: 50rem;
+    position: absolute;
+    /* bottom: 0%; */
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-color: #ff923e;
+}
+
+.inner-2-image-box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover
+}
+
 
 .project-card-container {
     display: flex;
