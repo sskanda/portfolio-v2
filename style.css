@@ -17,6 +17,11 @@ html {
     /* scroll-behavior: smooth; */
     background-color: rgb(253, 251, 247);
 
+
+}
+
+body {
+    transition: background-color .3s ease-in-out;
 }
 
 header {
@@ -150,12 +155,12 @@ section {
 /* -----about page */
 
 #about {
-    background-color: rgb(235, 230, 219);
+    /* background-color: rgb(153, 150, 144); */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+
     align-items: center;
-    scroll-behavior: smooth;
+
 
 }
 
@@ -272,11 +277,6 @@ section {
 }
 
 /* ------work----- */
-#work {
-
-    background-color: #5f574c2a;
-    /* overflow-x: scroll; */
-}
 
 .work-header {
     font-size: 6rem;
@@ -288,6 +288,7 @@ section {
 .project-card-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 80px;
     overflow-x: visible;
 }
@@ -302,7 +303,7 @@ section {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    z-index: 3;
+    /* z-index: 3; */
     transition: 1s;
 }
 
@@ -428,9 +429,6 @@ section {
 
 /* ///contact//// */
 
-#contact {
-    background-color: #bd75102a;
-}
 
 .contact-header {
     font-size: 7rem;
@@ -624,7 +622,52 @@ section {
         align-items: center;
         gap: 80px;
     }
+}
 
+/* //backround animations */
+.backgroundanimation {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
 
+.right-end-circle {
+    background-color: violet;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    width: 75vmax;
+    top: -35vmax;
+    left: 50%;
+}
 
+.right-end-circle:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.left-end-circle {
+    background-color: black;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    width: 50vmax;
+    top: 70%;
+    left: -25%;
+}
+
+.left-end-circle:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }

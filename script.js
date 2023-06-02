@@ -1,8 +1,9 @@
 'use strict'
 new fullpage('#fullpage', {
     //options here
-    licenseKey: '31EB1867-F27C4C2E-90C981D3-01B86BEC',
+
     autoScrolling: true,
+    scrollingSpeed: 1000,
     // scrollHorizontally: true,
     // slidesNavigation: true,
     // slidesNavPosition: 'bottom',
@@ -69,4 +70,69 @@ function applyCursorRippleEffect(e) {
 
     }
 
+}
+
+//test//
+const onHome = document.getElementsByClassName("fp-viewing-page-home");
+const onAbout = document.getElementsByClassName("fp-viewing-page-about");
+const onWork = document.getElementsByClassName("fp-viewing-page-work");
+const onContact = document.getElementsByClassName("fp-viewing-page-contact");
+const rightcircle = document.getElementsByClassName("right-end-circle")[0].style;
+const leftcircle = document.getElementsByClassName("left-end-circle")[0].style;
+const options = { attributes: true };
+const body = document.querySelector("body");
+const observer = new MutationObserver(scrollAnimations);
+observer.observe(body, options);
+
+document.addEventListener('click', function (e) {
+    console.log("erer");
+})
+
+function scrollAnimations(mutationList) {
+    mutationList.forEach(function (mutation) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+            if (onHome.length) {
+                rightcircle.width = '75vmax';
+                rightcircle.top = '-35vmax';
+                rightcircle.left = '50%';
+                rightcircle.transform = '';
+                rightcircle.background = 'violet';
+
+
+                leftcircle.width = '50vmax';
+                leftcircle.top = '70%';
+                leftcircle.left = '-25%';
+                leftcircle.transform = '';
+                leftcircle.backgroundColor = 'grey';
+            }
+
+            if (onAbout.length) {
+                rightcircle.width = '130vmax';
+                rightcircle.top = '-100vmax';
+                rightcircle.left = '50%';
+                rightcircle.transform = 'translateX(-50%)';
+                rightcircle.background = 'green';
+
+                leftcircle.transform = 'translateX(-50%)';
+                leftcircle.backgroundColor = 'black';
+                leftcircle.left = '50%';
+                body.style.background = 'red';
+            }
+            if (onWork.length) {
+                rightcircle.top = '-300%';
+                // rightcircle.backgroundColor = 'orange';
+                leftcircle.width = '45vmax';
+                leftcircle.left = '50%';
+                leftcircle.top = '-70%'
+                leftcircle.transform = 'translateX(-50%)';
+                leftcircle.backgroundColor = 'grey';
+            }
+            if (onContact.length) {
+                leftcircle.transform = 'translateX(-50%)';
+                leftcircle.backgroundColor = 'yellow';
+                leftcircle.left = '50%';
+                leftcircle.top = '70%'
+            }
+        }
+    })
 }
