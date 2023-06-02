@@ -1,9 +1,8 @@
 'use strict'
 new fullpage('#fullpage', {
     //options here
-
+    licenseKey: '31EB1867-F27C4C2E-90C981D3-01B86BEC',
     autoScrolling: true,
-    scrollingSpeed: 1000,
     // scrollHorizontally: true,
     // slidesNavigation: true,
     // slidesNavPosition: 'bottom',
