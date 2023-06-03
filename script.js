@@ -75,6 +75,8 @@ function applyCursorRippleEffect(e) {
 const onHome = document.getElementsByClassName("fp-viewing-page-home");
 const onAbout = document.getElementsByClassName("fp-viewing-page-about");
 const onWork = document.getElementsByClassName("fp-viewing-page-work");
+const onWork2 = document.getElementsByClassName("fp-viewing-page-work-2");
+const onWork3 = document.getElementsByClassName("fp-viewing-page-work-3");
 const onContact = document.getElementsByClassName("fp-viewing-page-contact");
 const rightcircle = document.getElementsByClassName("right-end-circle")[0].style;
 const leftcircle = document.getElementsByClassName("left-end-circle")[0].style;
@@ -114,12 +116,14 @@ function scrollAnimations(mutationList) {
                 rightcircle.top = '-100vmax';
                 rightcircle.left = '50%';
                 rightcircle.transform = 'translateX(-50%)';
-                // rightcircle.background = 'green';
+                rightcircle.backgroundColor = 'black';
 
                 leftcircle.transform = 'translateX(-50%)';
-                leftcircle.backgroundColor = 'black';
+                leftcircle.backgroundColor = 'var(--valotopcircle)';
                 leftcircle.left = '50%';
-                // body.style.background = 'red';
+                leftcircle.top = '70%';
+                headercolor("white");
+                body.style.background = 'var(--valobg)';
             }
             if (onWork.length) {
                 rightcircle.top = '-300%';
@@ -129,8 +133,26 @@ function scrollAnimations(mutationList) {
                 leftcircle.top = '-70%'
                 leftcircle.transform = 'translateX(-50%)';
                 leftcircle.backgroundColor = 'var(--valotopcircle)';
-                body.style.backgroundColor = 'var(--valobg)';
+                body.style.backgroundColor = 'var(--valosilverbg)';
                 body.style.color = 'white';
+                headercolor("white");
+            }
+            if (onWork2.length) {
+                rightcircle.width = '130vmax';
+                rightcircle.top = '-100vmax';
+                rightcircle.left = '50%';
+                rightcircle.transform = 'translateX(-50%)';
+                rightcircle.backgroundColor = 'black';
+                leftcircle.top = '-70%'
+                body.style.backgroundColor = '#12141d';
+                leftcircle.backgroundColor = 'var(--bgwhengreen)';
+                headercolor("var(--headgreen)");
+            }
+            if (onWork3.length) {
+                rightcircle.top = '-300%';
+                leftcircle.top = '-70%'
+                body.style.backgroundColor = 'var(--castlepink)';
+                leftcircle.backgroundColor = 'black';
                 headercolor("white");
             }
             if (onContact.length) {
@@ -139,6 +161,7 @@ function scrollAnimations(mutationList) {
                 leftcircle.left = '50%';
                 leftcircle.top = '70%'
             }
+
         }
     })
 }
