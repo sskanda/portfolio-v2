@@ -104,9 +104,17 @@ function scrollAnimations(mutationList) {
             if (onWork.length) {
                 rightcircle.top = '-300%';
                 // rightcircle.backgroundColor = 'orange';
-                leftcircle.width = '45vmax';
-                leftcircle.left = '50%';
-                leftcircle.top = '-70%'
+                if (window.innerWidth <= 980) {
+                    leftcircle.top = '-64%';
+                    leftcircle.width = '75vmax';
+                    leftcircle.left = '50%';
+                }
+                else {
+                    leftcircle.width = '45vmax';
+                    leftcircle.left = '50%';
+                    leftcircle.top = '-70%'
+                }
+
                 leftcircle.transform = 'translateX(-50%)';
                 leftcircle.backgroundColor = 'var(--valotopcircle)';
                 body.style.backgroundColor = 'var(--valosilverbg)';
