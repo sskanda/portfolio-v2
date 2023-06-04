@@ -106,7 +106,7 @@ function scrollAnimations(mutationList) {
                 // rightcircle.backgroundColor = 'orange';
                 if (window.innerWidth <= 980) {
                     leftcircle.top = '-64%';
-                    leftcircle.width = '75vmax';
+                    leftcircle.width = '80vmax';
                     leftcircle.left = '50%';
                 }
                 else {
@@ -127,14 +127,32 @@ function scrollAnimations(mutationList) {
                 rightcircle.left = '50%';
                 rightcircle.transform = 'translateX(-50%)';
                 rightcircle.backgroundColor = 'black';
-                leftcircle.top = '-70%'
+                if (window.innerWidth <= 980) {
+                    leftcircle.top = '-64%';
+                    leftcircle.width = '80vmax';
+                    leftcircle.left = '50%';
+                }
+                else {
+                    leftcircle.width = '45vmax';
+                    leftcircle.left = '50%';
+                    leftcircle.top = '-70%'
+                }
                 body.style.backgroundColor = '#12141d';
                 leftcircle.backgroundColor = 'var(--bgwhengreen)';
                 headercolor("var(--headgreen)");
             }
             if (onWork3.length) {
                 rightcircle.top = '-300%';
-                leftcircle.top = '-70%'
+                if (window.innerWidth <= 980) {
+                    leftcircle.top = '-64%';
+                    leftcircle.width = '80vmax';
+                    leftcircle.left = '50%';
+                }
+                else {
+                    leftcircle.width = '45vmax';
+                    leftcircle.left = '50%';
+                    leftcircle.top = '-70%'
+                }
                 body.style.backgroundColor = 'var(--castlepink)';
                 leftcircle.backgroundColor = 'black';
                 headercolor("white");

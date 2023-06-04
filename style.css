@@ -312,7 +312,7 @@ section {
 
 .outer-2-image-box {
     position: relative;
-    left: 70%;
+    left: 30%;
     width: 75rem;
     height: 60rem;
     padding-top: 20rem;
@@ -640,7 +640,7 @@ section {
 
 @media (max-width: 980px) {
     html {
-        font-size: 1vw;
+        font-size: 7px;
     }
 
     header {
@@ -663,6 +663,26 @@ section {
         position: relative;
         left: 0;
         margin-left: 6rem;
+    }
+
+    .work-container-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .work-2-desc {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        margin-left: 6rem;
+    }
+
+    .outer-2-image-box {
+        left: 0;
     }
 
 }
