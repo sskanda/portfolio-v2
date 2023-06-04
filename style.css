@@ -19,18 +19,13 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    /* color: #091434; */
-    /* cursor: none; */
+
 }
 
 html {
-    /* font-size: 62.5%; */
+
     font-size: 0.52115905774vw;
-    /* background-color: rgb(8, 8, 8); */
-    /* scroll-behavior: smooth; */
     background-color: rgb(253, 251, 247);
-
-
 }
 
 body {
@@ -39,17 +34,12 @@ body {
 
 header {
     position: fixed;
-    /* position: absolute; */
     display: flex;
-    /* background-color: rgb(230, 156, 73); */
     padding: 3rem 20rem 3rem 3rem;
     width: 100%;
     justify-content: end;
-    /* background-color: white; */
     align-items: center;
-    /* z-index: 100; */
-    /* background-color: coral; */
-    z-index: 1;
+    z-index: 99;
 
 }
 
@@ -63,9 +53,6 @@ section {
     display: flex;
     gap: 4rem;
     top: 6rem;
-    /* transform: translate(0%); */
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .navbar>a {
@@ -73,7 +60,6 @@ section {
     position: relative;
     font-size: 2rem;
     font-weight: 400;
-    /* color: #091434; */
 }
 
 .navbar>a:after {
@@ -95,8 +81,6 @@ section {
 }
 
 .box-menu {
-    /* position: relative;
-    left: 90vw; */
     visibility: hidden;
     position: fixed;
     z-index: 5;
@@ -135,10 +119,6 @@ section {
     gap: 80px;
 }
 
-/* .home-content {
-    display: flex;
-
-} */
 
 
 .profile-image {
@@ -168,13 +148,9 @@ section {
 /* -----about page */
 
 #about {
-    /* background-color: rgb(153, 150, 144); */
     display: flex;
     flex-direction: column;
-
     align-items: center;
-
-
 }
 
 
@@ -184,8 +160,6 @@ section {
     justify-content: center;
     align-items: center;
     height: 300px;
-
-
 }
 
 .about-image img {
@@ -210,17 +184,14 @@ section {
 @keyframes ring {
     0% {
         transform: rotate(0deg);
-        /* box-shadow: 1px 5px 2px purple; */
     }
 
     50% {
         transform: rotate(180deg);
-        /* box-shadow: 1px 5px 2px #18b201; */
     }
 
     100% {
         transform: rotate(360deg);
-        /* box-shadow: 1px 5px 2px #0456c8; */
     }
 }
 
@@ -231,8 +202,6 @@ section {
 }
 
 .about-head h1 {
-    /* position: absolute;
-    left: 10%; */
     color: #ff923e;
     font-size: 1.5rem;
 }
@@ -250,10 +219,8 @@ section {
     margin-left: 20rem;
     margin-right: 20rem;
     margin-bottom: 10rem;
-    /* background-color: white; */
     border-radius: 5px;
-    /* padding-bottom: 15rem; */
-    /* padding: 8rem; */
+
 }
 
 .about-content span {
@@ -331,7 +298,6 @@ section {
     width: 70rem;
     height: 50rem;
     position: absolute;
-    /* bottom: 0%; */
     top: 50%;
     transform: translate(0, -50%);
 }
@@ -370,7 +336,6 @@ section {
     width: 70rem;
     height: 50rem;
     position: absolute;
-    /* bottom: 0%; */
     top: 50%;
     right: 0;
     transform: translate(0, -50%);
@@ -466,7 +431,6 @@ section {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    /* z-index: 3; */
     transition: 1s;
 }
 
@@ -504,7 +468,6 @@ section {
 
 
 .project-name {
-    /* margin-top: 2rem; */
     font-size: 2.5rem;
     font-weight: 600;
 }
@@ -552,7 +515,6 @@ section {
     justify-content: center;
     align-items: end;
     gap: 10px;
-    /* align-items: end; */
 }
 
 .github-redirect i {
@@ -696,11 +658,9 @@ section {
 .email-message {
     flex: 1;
     overflow: hidden;
-    /* height: 100%; */
 }
 
 .email-message textarea {
-    /* height: 100%; */
     background-color: transparent;
     border-color: transparent;
     outline: none;
@@ -718,8 +678,6 @@ section {
     border-radius: 50%;
     pointer-events: none;
     z-index: 999;
-    /* transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
-        height 0.15s ease-out, background-color 0.15s ease-out; */
 }
 
 #cursor-border {
@@ -731,7 +689,6 @@ section {
     height: var(--size);
     border-radius: 50%;
     box-shadow: 0 0 0 1px rgb(52, 191, 255);
-    ;
     pointer-events: none;
     transition: top 0.15s ease-out, left 0.15s ease-out, width 0.15s ease-out,
         height 0.15s ease-out, background-color 0.15s ease-out;

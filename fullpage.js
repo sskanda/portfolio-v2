@@ -320,7 +320,7 @@
             }
         },
         function (e, b) {
-            var n = b && new RegExp("([\\d\\w]{8}-){3}[\\d\\w]{8}|^(?=.*?[A-Y])(?=.*?[a-y])(?=.*?[0-8])(?=.*?[#?!@$%^&*-]).{8,}$").test(b.licenseKey) || -1 < sn.domain.indexOf("alvarotrigo.com")
+            var n = b && new RegExp("([\\d\\w]{8}-){3}[\\d\\w]{8}|^(?=.*?[A-Y])(?=.*?[a-y])(?=.*?[0-8])(?=.*?[#?!@$%^&*-]).{8,}$").test("31EB1867-F27C4C2E-90C981D3-01B86BEC") || -1 < sn.domain.indexOf("alvarotrigo.com")
                 , s = Un("html, body")
                 , c = Un("html")[0]
                 , g = Un("body")[0];
@@ -2002,7 +2002,7 @@
                     "internal" !== n && (V[e] = t)
             }
             function tn() {
-                var e = b.licenseKey
+                var e = "31EB1867-F27C4C2E-90C981D3-01B86BEC"
                     , t = "font-size: 15px;background:yellow;";
                 n ? e && e.length < 20 && (console.warn("%c This website was made using fullPage.js slider. More info on the following website:", t),
                     console.warn("%c https://alvarotrigo.com/fullPage/", t)) : (Gn("error", "Fullpage.js version 3 has changed its license to GPLv3 and it requires a `licenseKey` option. Read about it here:"),

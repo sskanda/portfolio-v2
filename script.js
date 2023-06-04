@@ -1,13 +1,7 @@
 'use strict'
 new fullpage('#fullpage', {
     //options here
-    licenseKey: '31EB1867-F27C4C2E-90C981D3-01B86BEC',
     autoScrolling: true,
-    // scrollHorizontally: true,
-    // slidesNavigation: true,
-    // slidesNavPosition: 'bottom',
-    // resetSliders: true,
-    // resetSlidersKey: 'b3JvcGVuZG9sYS5kZXZfUUtwY21WelpYUlRiR2xrWlhKejI0ZA==',
 });
 
 const boxmenu = document.querySelector('.box-menu');
@@ -18,21 +12,6 @@ const cursorBorder = document.querySelector("#cursor-border");
 const cursorPosition = { x: 0, y: 0 };
 const cursorBorderPosition = { x: 0, y: 0 };
 
-boxmenu.addEventListener('click', function () {
-    console.log('clicked');
-    navbar.classList.toggle("nav-active");
-    if (icon.classList.contains("fa-bars")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark")
-
-    }
-    else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-
-    }
-
-})
 
 //cursore effect//
 document.addEventListener("mousemove", (e) => {
@@ -89,9 +68,6 @@ const worklink = document.querySelector("#worklink");
 const contactlink = document.querySelector("#contactlink");
 observer.observe(body, options);
 
-document.addEventListener('click', function (e) {
-    console.log("erer");
-})
 
 function scrollAnimations(mutationList) {
     mutationList.forEach(function (mutation) {
