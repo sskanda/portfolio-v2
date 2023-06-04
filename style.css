@@ -640,7 +640,7 @@ section {
 
 @media (max-width: 980px) {
     html {
-        font-size: 7px;
+        font-size: 0.3rem;
     }
 
     header {
