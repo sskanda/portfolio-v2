@@ -138,6 +138,7 @@ function scrollAnimations(mutationList) {
                     leftcircle.top = '-65rem'
                 }
                 body.style.backgroundColor = '#12141d';
+                body.style.color = 'var(--headgreen)';
                 leftcircle.backgroundColor = 'var(--bgwhengreen)';
                 headercolor("var(--headgreen)");
             }
@@ -153,6 +154,7 @@ function scrollAnimations(mutationList) {
                     leftcircle.left = '50%';
                     leftcircle.top = '-65rem'
                 }
+                body.style.color = 'white';
                 body.style.backgroundColor = 'var(--castlepink)';
                 leftcircle.backgroundColor = 'black';
                 headercolor("white");
@@ -162,6 +164,7 @@ function scrollAnimations(mutationList) {
                 leftcircle.backgroundColor = 'yellow';
                 leftcircle.left = '50%';
                 leftcircle.top = '70%'
+                body.style.color = 'white';
             }
 
         }
