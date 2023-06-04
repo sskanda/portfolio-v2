@@ -112,7 +112,7 @@ function scrollAnimations(mutationList) {
                 else {
                     leftcircle.width = '45vmax';
                     leftcircle.left = '50%';
-                    leftcircle.top = '-70%'
+                    leftcircle.top = '-65rem'
                 }
 
                 leftcircle.transform = 'translateX(-50%)';
@@ -135,7 +135,7 @@ function scrollAnimations(mutationList) {
                 else {
                     leftcircle.width = '45vmax';
                     leftcircle.left = '50%';
-                    leftcircle.top = '-70%'
+                    leftcircle.top = '-65rem'
                 }
                 body.style.backgroundColor = '#12141d';
                 leftcircle.backgroundColor = 'var(--bgwhengreen)';
@@ -151,7 +151,7 @@ function scrollAnimations(mutationList) {
                 else {
                     leftcircle.width = '45vmax';
                     leftcircle.left = '50%';
-                    leftcircle.top = '-70%'
+                    leftcircle.top = '-65rem'
                 }
                 body.style.backgroundColor = 'var(--castlepink)';
                 leftcircle.backgroundColor = 'black';
