@@ -1,248 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- <script type="text/javascript" src="fullpage.resetSliders.min.js" defer></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="text/javascript" src="fullpage.js" defer></script>
     <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="images/title-logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="images/title-logo.png"
+      type="image/x-icon"
+    />
     <title>Skanda | Dev</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="backgroundanimation">
-        <div class="right-end-circle"></div>
-        <div class="left-end-circle"></div>
+      <div class="right-end-circle"></div>
+      <div class="left-end-circle"></div>
     </div>
     <div class="cursor"></div>
     <div id="cursor-border"></div>
     <header class="header">
-
-        <nav class="navbar">
-            <a href="#page-home" id="homelink">Home</a>
-            <a href="#page-about" id="aboutlink">About</a>
-            <a href="#page-work" id="worklink">Work</a>
-            <a href="#page-contact" id="contactlink">Contact</a>
-        </nav>
+      <nav class="navbar">
+        <a href="#page-home" id="homelink">Home</a>
+        <a href="#page-about" id="aboutlink">About</a>
+        <a href="#page-work" id="worklink">Work</a>
+        <a href="#page-contact" id="contactlink">Contact</a>
+      </nav>
     </header>
     <div id="fullpage">
-        <div class="section s1" data-anchor="page-home">
-            <section class="home" id="home">
-                <div class="home-container">
-                    <div class="home-content">
-                        <div class="h1">Hi, I'm Skanda</div>
-                        <div class="h2"><br>Fullstack Developer</div>
-                    </div>
-                    <div class="profile-image">
-                        <img src="/images/project.png" alt="">
-                    </div>
+      <div class="section s1" data-anchor="page-home">
+        <section class="home" id="home">
+          <div class="home-container">
+            <div class="home-content">
+              <div class="h1">Hi, I'm Skanda</div>
+              <div class="h2"><br />Fullstack Developer</div>
+            </div>
+            <div class="profile-image">
+              <img src="/images/project.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section s2" data-anchor="page-about">
+        <section class="about" id="about">
+          <div class="about-head">
+            <h1>About</h1>
+          </div>
+          <div class="about-container">
+            <div class="about-image">
+              <div class="outer-ring"></div>
+              <img src="/images/team-member-2.png" alt="about-img" />
+            </div>
+          </div>
+          <div class="about-content-container">
+            <div class="about-content">
+              <span
+                >I am a Fullstack Developer with around 2 years of experience.
+                Working on creating and building complex solution as the
+                business demands.<br
+              /></span>
+              <span
+                >Have a keen interest in the entire Web Development spectrum and
+                always working towards learning something new.</span
+              >
+            </div>
+          </div>
+          <div class="skills-contianer">
+            <div class="skills-header">TOOLING</div>
+          </div>
+
+          <div class="skills-list">
+            <img src="images/html.png" alt="html" />
+            <img src="images/css-3.png" alt="css" />
+            <img
+              id="js-img"
+              src="images/icons8-javascript.gif"
+              alt="javascript"
+            />
+            <img src="images/react.png" alt="react" />
+            <img src="images/icons8-angularjs.svg" alt="angular" />
+            <img src="images/microsoft-dot-net.png" alt="dotnet" />
+          </div>
+        </section>
+      </div>
+      <div class="section s3" data-anchor="page-work">
+        <section class="work" id="work">
+          <div class="work-header">Work</div>
+          <div class="work-container">
+            <div class="work-image">
+              <a href="https://valo-gg.netlify.app/" target="_blank">
+                <div class="outer-image-box bg-1">
+                  <div class="inner-image-box">
+                    <img src="images/valo.jpg" alt="valorant" />
+                  </div>
                 </div>
-            </section>
-        </div>
-        <div class="section s2" data-anchor="page-about">
-            <section class="about" id="about">
-                <div class="about-head">
-                    <h1>About</h1>
+              </a>
+            </div>
+            <div class="work-desc-1 color-1-font">
+              <div class="work-desc-header">Valo Launcher</div>
+              <div class="work-desc-content">
+                Valorant Game Launcher where you can login and buy cool skins!
+                Payment integration using PayPal.
+                <br />
+                <br />
+                Tech Stack used: HTML, CSS, Javascript.
+              </div>
+              <div class="work-desc-redirect">
+                <a
+                  href="https://valo-gg.netlify.app/"
+                  target="_blank"
+                  class="color-1-font"
+                >
+                  LIVE APP
+                </a>
+              </div>
+              <div class="work-desc-redirect redirect-to-github">
+                <a
+                  href="https://github.com/sskanda/Valorant-game-launcher"
+                  target="_blank"
+                  class="color-1-font"
+                >
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section s4" data-anchor="page-work-2">
+        <section class="work" id="work">
+          <div class="work-header color-2-font">Work</div>
+          <div class="work-container-2">
+            <div class="work-2-desc">
+              <div class="work-desc-header color-2-font">High Rize</div>
+              <div class="work-desc-content color-2-font">
+                Place where you can buy or rent luxurious houses all across the
+                world.
+                <br />
+                <br />
+                Tech Stack used: React JS, CSS.
+              </div>
+              <div class="work-desc-redirect" class="color-2-font">
+                <a
+                  href="https://high-rize.netlify.app/"
+                  class="color-2-font"
+                  target="_blank"
+                >
+                  LIVE APP
+                </a>
+              </div>
+              <div class="work-desc-redirect redirect-to-github">
+                <a
+                  href="https://github.com/sskanda/real-estate-react"
+                  target="_blank"
+                  class="color-2-font"
+                >
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+            <div class="work-2-image">
+              <a href="https://high-rize.netlify.app/" target="_blank">
+                <div class="outer-2-image-box bg-2">
+                  <div class="inner-2-image-box">
+                    <img src="images/home-2.jpg" alt="valorant" />
+                  </div>
                 </div>
-                <div class="about-container">
-                    <div class="about-image">
-                        <div class="outer-ring"></div>
-                        <img src="/images/team-member-2.png" alt="about-img">
-                    </div>
-
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section s5" data-anchor="page-work-3">
+        <section class="work" id="work">
+          <div class="work-header">Work</div>
+          <div class="work-container">
+            <div class="work-image">
+              <a href="https://foodie-buzz.netlify.app/" target="_blank">
+                <div class="outer-image-box bg-1">
+                  <div class="inner-image-box">
+                    <img src="images/food.jpg" alt="valorant" />
+                  </div>
                 </div>
-                <div class="about-content-container">
-                    <div class="about-content">
-                        <span>I am a Fullstack Developer with around 2 years of experience. Working on creating
-                            and building complex solution as the business demands.<br></span>
-                        <span>Have a keen interest in the entire
-                            Web Development spectrum and always working towards learning something new.</span>
-                    </div>
-
+              </a>
+            </div>
+            <div class="work-desc-1 color-1-font">
+              <div class="work-desc-header">Foddie Buzz</div>
+              <div class="work-desc-content">
+                Order out your favorite dishes here!!
+                <br />
+                <br />
+                Tech Stack used: React JS, CSS.
+              </div>
+              <div class="work-desc-redirect">
+                <a
+                  href="https://foodie-buzz.netlify.app/"
+                  target="_blank"
+                  class="color-1-font"
+                >
+                  LIVE APP
+                </a>
+              </div>
+              <div class="work-desc-redirect redirect-to-github">
+                <a
+                  href="https://github.com/sskanda/foodie-buzz"
+                  target="_blank"
+                  class="color-1-font"
+                >
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div class="section s5" data-anchor="page-work-3">
+        <section class="work" id="work">
+          <div class="work-header">Work</div>
+          <div class="work-container">
+            <div class="work-image">
+              <a href="https://foodie-buzz.netlify.app/" target="_blank">
+                <div class="outer-image-box">
+                  <div class="inner-image-box">
+                    <img src="images/food.jpg" alt="valorant" />
+                  </div>
                 </div>
-                <div class="skills-contianer">
-                    <div class="skills-header">TOOLING</div>
-
+              </a>
+            </div>
+            <div class="work-desc">
+              <div class="work-desc-header">Foddie Buzz</div>
+              <div class="work-desc-content">
+                Order out your favorite dishes here!!
+                <br />
+                <br />
+                Tech Stack used: React JS, CSS.
+              </div>
+              <div class="work-desc-redirect">
+                <a
+                  href="https://foodie-buzz.netlify.app/"
+                  class="color-3-font"
+                  target="_blank"
+                >
+                  LIVE APP
+                </a>
+              </div>
+              <div class="work-desc-redirect redirect-to-github">
+                <a
+                  href="https://github.com/sskanda/foodie-buzz"
+                  class="color-3-font"
+                  target="_blank"
+                >
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> -->
+      <div class="section s6" data-anchor="page-work-4">
+        <section class="work" id="work">
+          <div class="work-header">Work</div>
+          <div class="work-container-2">
+            <div class="work-2-desc">
+              <div class="work-desc-header">Portfolio 2023</div>
+              <div class="work-desc-content">
+                Built my first portfolio.
+                <br />
+                <br />
+                Tech Stack used: HTML, CSS, Javascript.
+              </div>
+              <div class="work-desc-redirect">
+                <a href="#page-home" class="color-3-font"> LIVE APP </a>
+              </div>
+              <div class="work-desc-redirect redirect-to-github">
+                <a
+                  href="https://github.com/sskanda/portfolio-v2"
+                  target="_blank"
+                  class="color-3-font"
+                >
+                  LEARN MORE
+                </a>
+              </div>
+            </div>
+            <div class="work-2-image">
+              <a href="#page-home">
+                <div class="outer-2-image-box bg-2">
+                  <div class="inner-2-image-box">
+                    <img src="images/portfolio.png" alt="valorant" />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section s7" data-anchor="page-work-5">
+        <section class="work" id="work">
+          <div class="work-header">Work</div>
+          <div class="work-container">
+            <div class="work-image">
+              <a href="#">
+                <div class="outer-image-box bg-1">
+                  <div class="inner-image-box">
+                    <img src="images/upcoming3.jpg" alt="upcoming" />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="work-desc-1 color-1-font">
+              <div class="work-desc-header">Coming Soon</div>
+              <div class="work-desc-content">Upcoming Project!!</div>
+              <div class="work-desc-redirect">
+                <a href="#" class="color-1-font"> LIVE APP </a>
+              </div>
+              <div class="work-desc-redirect redirect-to-github">
+                <a href="#" class="color-1-font"> LEARN MORE </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="section s8" data-anchor="page-contact">
+        <section class="contact" id="contact">
+          <div class="contact-header">Contact Me</div>
+          <div class="contact-box-container">
+            <div class="contact-box">
+              <div class="contact-name-input">
+                <span>Name:</span>
+                <input
+                  class="usernameinput"
+                  type="text"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="contact-name-input email">
+                <span>Email:</span>
+                <input
+                  class="usernameinput"
+                  type="text"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="contact-name-input email-message">
+                <span>Message:</span>
+                <textarea
+                  name="email-message"
+                  id="email-message-textarea"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div class="contact-buttons">
+                <div class="contact-github">
+                  <a href="https://github.com/sskanda" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+                <div class="contact-linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/skanda-bhat-6a839616b/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+                <div class="contact-submit-container">
+                  <div class="contact-submit"><span>Submit</span></div>
                 </div>
 
-                <div class="skills-list">
-                    <img src="images/html.png" alt="html">
-                    <img src="images/css-3.png" alt="css">
-                    <img id="js-img" src="images/icons8-javascript.gif" alt="javascript">
-                    <img src="images/react.png" alt="react">
-                    <img src="images/icons8-angularjs.svg" alt="angular">
-                    <img src="images/microsoft-dot-net.png" alt="dotnet">
-
-                </div>
-
-            </section>
-        </div>
-        <div class="section s3" data-anchor="page-work">
-            <section class="work" id="work">
-                <div class="work-header">
-                    Work
-                </div>
-                <div class="work-container">
-                    <div class="work-image">
-                        <a href="https://valo-gg.netlify.app/" target="_blank">
-                            <div class="outer-image-box bg-1">
-                                <div class="inner-image-box"><img src="images/valo.jpg" alt="valorant"></div>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="work-desc-1 color-1-font">
-                        <div class="work-desc-header">
-                            Valo Launcher
-                        </div>
-                        <div class="work-desc-content">
-                            Valorant Game Launcher where you can login and buy cool skins! Payment integration using
-                            PayPal.
-                        </div>
-                        <div class="work-desc-redirect">
-                            <a href="https://valo-gg.netlify.app/" target="_blank" class="color-1-font">
-                                LIVE APP
-                            </a>
-                        </div>
-                        <div class="work-desc-redirect redirect-to-github">
-
-                            <a href="https://github.com/sskanda/Valorant-game-launcher" target="_blank"
-                                class="color-1-font">
-                                LEARN MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="section s4" data-anchor="page-work-2">
-            <section class="work" id="work">
-                <div class="work-header color-2-font">
-                    Work
-                </div>
-                <div class="work-container-2">
-                    <div class="work-2-desc">
-                        <div class="work-desc-header color-2-font">
-                            Portfolio 2023
-                        </div>
-                        <div class="work-desc-content color-2-font">
-                            Built my first Portfolio.
-                        </div>
-                        <div class="work-desc-redirect" class="color-2-font">
-                            <a href="#page-home" class="color-2-font">
-                                LIVE APP
-                            </a>
-                        </div>
-                        <div class="work-desc-redirect redirect-to-github">
-
-                            <a href="https://github.com/sskanda/portfolio-v2" target="_blank" class="color-2-font">
-                                LEARN MORE
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work-2-image">
-                        <a href="#page-home">
-                            <div class="outer-2-image-box bg-2">
-                                <div class="inner-2-image-box">
-                                    <img src="images/portfolio.png" alt="valorant">
-                                </div>
-                            </div>
-
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-        <div class="section s5" data-anchor="page-work-3">
-            <section class="work" id="work">
-                <div class="work-header">
-                    Work
-                </div>
-                <div class="work-container">
-                    <div class="work-image">
-                        <a href="#">
-                            <div class="outer-image-box">
-                                <div class="inner-image-box">
-                                    <img src="images/upcoming3.jpg" alt="valorant">
-                                </div>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="work-desc">
-                        <div class="work-desc-header">
-                            Coming Soon
-                        </div>
-                        <div class="work-desc-content">
-                            Upcoming Project!!!
-                        </div>
-                        <div class="work-desc-redirect">
-                            <a href="#" class="color-3-font">
-                                LIVE APP
-                            </a>
-                        </div>
-                        <div class="work-desc-redirect redirect-to-github">
-
-                            <a href="#" class="color-3-font">
-                                LEARN MORE
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-        <div class="section s6" data-anchor="page-contact">
-            <section class="contact" id="contact">
-                <div class="contact-header">Contact Me</div>
-                <div class="contact-box-container">
-                    <div class="contact-box">
-                        <div class="contact-name-input">
-                            <span>Name:</span>
-                            <input class="usernameinput" type="text" name="username" required="required">
-                        </div>
-                        <div class="contact-name-input email">
-                            <span>Email:</span>
-                            <input class="usernameinput" type="text" name="username" required="required">
-                        </div>
-                        <div class="contact-name-input email-message">
-                            <span>Message:</span>
-                            <textarea name="email-message" id="email-message-textarea" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="contact-buttons">
-                            <div class="contact-github">
-                                <a href="https://github.com/sskanda" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                            <div class="contact-linkedin">
-                                <a href="https://www.linkedin.com/in/skanda-bhat-6a839616b/" target="_blank">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                            <div class="contact-submit-container">
-
-                                <div class="contact-submit"><span>Submit</span></div>
-                            </div>
-
-                            <!-- <i class="fa-brands fa-github"> -->
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
-        </div>
+                <!-- <i class="fa-brands fa-github"> -->
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
