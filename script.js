@@ -170,9 +170,9 @@ function scrollAnimations(mutationList) {
           leftcircle.left = "50%";
           leftcircle.top = "-65rem";
         }
-        body.style.background = "red";
+        body.style.background = "purple";
         body.style.color = "white";
-        leftcircle.backgroundColor = "var(--bgwhengreen)";
+        leftcircle.backgroundColor = "purple";
         headercolor("white");
       }
       if (onWork5.length) {
